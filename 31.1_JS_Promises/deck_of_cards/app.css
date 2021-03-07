@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(5, 92, 5);
+}
+
+#more_cards{
+    background-color: rgb(116, 109, 109);
+    border-radius: 3px;
+}
+
+#card_area {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10%;
+}
