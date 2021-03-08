@@ -9,7 +9,10 @@ body{
 
 #card_area {
     width: 50%;
-    height: 50%;
+    height: 70%;
     margin: auto;
-    margin-top: 10%;
+}
+
+#card_area img {
+    margin: auto
 }
