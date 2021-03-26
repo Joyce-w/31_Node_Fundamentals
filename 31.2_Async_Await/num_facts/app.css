@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(27, 119, 27);
+}
+
+.drawCard{
+    border-radius: 5px;
+    height: 2em;
+    background-color: grey;
+    color: white;
+}
+
+.cardPile{
+    margin: 5%
+}
