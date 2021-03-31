@@ -38,6 +38,7 @@ class MarkovMachine {
         obj[temp] = arr
       }
     }
+    return obj
   }
 
   /** return random text from chains */
@@ -47,4 +48,4 @@ class MarkovMachine {
   }
 }
 
-let mm = new MarkovMachine('the cat in the hat')
+module.exports = { MarkovMachine }
