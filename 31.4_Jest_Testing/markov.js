@@ -44,8 +44,34 @@ class MarkovMachine {
   /** return random text from chains */
 
   makeText(numWords = 100) {
-    // TODO
+    let text = []
+
+    while (text.length < numWords) {
+      //get length of words and generate random
+      let num = (this.words.length)
+      let keyWordLen = Math.floor((Math.random() * num))
+      let chain = this.makeChains()
+
+      let temp = this.words[keyWordLen]
+      let valLen =  Math.floor((Math.random() * (chain[temp]).length))
+      let val = (chain[temp][valLen])
+
+      text.push(temp)
+      text.push(val)
+    }
+
+    let str = text.join(' ')
+    return str
   }
 }
 
+// let mm = new MarkovMachine('My name is Joyce and I like to walk my dog. My dog is a cute golden reteriver. goldens are the best dog because they are well behaved. Joyce can be well behaved as well')
+
+// let nn = mm.makeChains()
+// let oo = mm.makeText()
+// console.log(oo.length)
+  
+  
+  
+  
 module.exports = { MarkovMachine }
